@@ -11,11 +11,17 @@ class UsuarioEntrada extends Component {
         }
     }
 
-    render(){
+    handleInputChange = (e) => {
+        const novoValor = e.target.value;
+        this.setState({ value: novoValor });
+        this.props.onInputChange(novoValor);
+    };
+
+    render(props){
         return(
             <div>
-                <label for={this.state.id}>Nome:</label>
-                <input id={this.state.id} type="text" value={this.state.value} placeholder={this.state.placeholder}/>
+                <label for={this.props.id}>Nome:</label>
+                <input id={this.props.id} type="text" value={this.props.value} placeholder={this.props.placeholder} onChange={this.handleInputChange}/>
             </div>
         );
     }
