@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div>
-            <UsuarioEntrada id="name" placeholder="Insira seu nome" onInputChange={handleInputChange}/>
+            <UsuarioEntrada id="name" label="Nome: " placeholder="Insira seu nome" onInputChange={handleInputChange}/>
 
             <UsuarioSaida p1={displayText} p2="Componente UsuarioSaida"/>
 

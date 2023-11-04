@@ -7,6 +7,7 @@ class UsuarioEntrada extends Component {
         this.state = {
             id: 'name',
             value: '',
+            label: '',
             placeholder: 'Insira seu nome:'
         }
     }
@@ -20,7 +21,7 @@ class UsuarioEntrada extends Component {
     render(props){
         return(
             <div>
-                <label for={this.props.id}>Nome:</label>
+                <label for={this.props.id}>{this.props.label}</label>
                 <input id={this.props.id} type="text" value={this.props.value} placeholder={this.props.placeholder} onChange={this.handleInputChange}/>
             </div>
         );
