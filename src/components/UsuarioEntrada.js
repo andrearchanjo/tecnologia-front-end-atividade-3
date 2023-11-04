@@ -5,10 +5,10 @@ class UsuarioEntrada extends Component {
         super(props);
 
         this.state = {
-            id: 'name',
+            id: '',
             value: '',
             label: '',
-            placeholder: 'Insira seu nome:'
+            placeholder: ''
         }
     }
 
